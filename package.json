@@ -1,9 +1,12 @@
 {
+  "homepage":"https://nelsonalejandro.github.io/store-front-tohol",
   "name": "vendure-angular-storefront",
   "version": "0.3.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve --port 4201",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "build": "ng build",
     "analyze-prod-bundle": "ng build --prod --statsJson=true && webpack-bundle-analyzer dist/browser/stats.json",
     "test": "ng test",
@@ -73,6 +76,7 @@
     "autoprefixer": "^10.4.13",
     "codelyzer": "^6.0.0",
     "eslint": "^8.44.0",
+    "gh-pages": "^5.0.0",
     "jasmine-core": "~3.6.0",
     "jasmine-spec-reporter": "~5.0.0",
     "karma": "~6.3.2",
