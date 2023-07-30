@@ -6,7 +6,7 @@
     "ng": "ng",
     "start": "ng serve --port 4201",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+    "deploy": "gh-pages -d dist/browser",
     "build": "ng build",
     "analyze-prod-bundle": "ng build --prod --statsJson=true && webpack-bundle-analyzer dist/browser/stats.json",
     "test": "ng test",
